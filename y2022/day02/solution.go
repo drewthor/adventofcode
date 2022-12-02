@@ -22,10 +22,6 @@ func PartOne() error {
 
 	fmt.Println(fmt.Sprintf("score after play: %d", score))
 
-	//if _, err := w.Write([]byte(fmt.Sprintf("max elf calories: %d", maxElfCal))); err != nil {
-	//	return fmt.Errorf("failed to write output to writer: %w", err)
-	//}
-
 	return nil
 }
 
@@ -42,10 +38,6 @@ func PartTwo() error {
 	}
 
 	fmt.Println(fmt.Sprintf("score after play: %d", score))
-
-	//if _, err := w.Write([]byte(fmt.Sprintf("max elf calories: %d", sumTop3MaxElfCals))); err != nil {
-	//	return fmt.Errorf("failed to write output to writer: %w", err)
-	//}
 
 	return nil
 }
