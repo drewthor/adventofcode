@@ -1,4 +1,4 @@
-package day01
+package day02
 
 import (
 	"bufio"
@@ -80,7 +80,6 @@ func findScoreOfRPSSecondStrategy(r io.Reader) (int, error) {
 
 	score := 0
 	for _, line := range lines {
-		line = strings.TrimRight(line, "\n")
 		if len(line) == 0 {
 			continue
 		}

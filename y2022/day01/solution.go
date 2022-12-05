@@ -7,7 +7,6 @@ import (
 	"os"
 	"sort"
 	"strconv"
-	"strings"
 )
 
 func PartOne() error {
@@ -66,7 +65,6 @@ func findSortedElfCalories(r io.Reader) ([]int, error) {
 	var elfCals []int
 	currElfCal := 0
 	for _, line := range lines {
-		line = strings.TrimSpace(line)
 		if len(line) == 0 {
 			elfCals = append(elfCals, currElfCal)
 			currElfCal = 0
