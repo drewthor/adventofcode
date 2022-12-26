@@ -41,15 +41,6 @@ func PartTwo() error {
 	return nil
 }
 
-type monkey struct {
-	num         int
-	items       []int
-	op          func(int) int
-	divisor     int
-	trueMonkey  int
-	falseMonkey int
-}
-
 func buildHeightmap(r io.Reader) [][]rune {
 	var lines []string
 
@@ -130,11 +121,4 @@ func min(i ...int) int {
 		}
 	}
 	return m
-}
-
-func max(i, j int) int {
-	if i > j {
-		return i
-	}
-	return j
 }
