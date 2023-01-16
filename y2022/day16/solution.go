@@ -21,7 +21,7 @@ func PartOne() error {
 
 	valves, err := parseValveConnectionsAndFlows(file)
 	if err != nil {
-		fmt.Errorf("failed to parse valve connections and flows: %w", err)
+		return fmt.Errorf("failed to parse valve connections and flows: %w", err)
 	}
 
 	maxPressureRelief := findMaxPressureReliefInTime(valves, 30)
@@ -40,7 +40,7 @@ func PartTwo() error {
 
 	valves, err := parseValveConnectionsAndFlows(file)
 	if err != nil {
-		fmt.Errorf("failed to parse valve connections and flows: %w", err)
+		return fmt.Errorf("failed to parse valve connections and flows: %w", err)
 	}
 
 	pressureReliefResults := findPressureReliefsInTime(valves, 26)
